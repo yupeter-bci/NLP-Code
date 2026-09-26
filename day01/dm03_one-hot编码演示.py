@@ -40,7 +40,7 @@ from tensorflow.keras.preprocessing.text import Tokenizer  # 导入keras中的<<
 import joblib  # 用于对象保存与加载的
 
 
-# todo 1. 定义函数, 演示 获取 one-hot编码
+#  1. 定义函数, 演示 获取 one-hot编码
 def dm01_onehot_gen():
     # 1. 准备语料(人名, 模拟: 句子切词后的内容)
     vocabs = {'周杰伦', '陈奕迅', '王力宏', '夯哥', '李巍巍', '查成龙'}
@@ -70,7 +70,7 @@ def dm01_onehot_gen():
     print('one-hot编码器保存成功!')
 
 
-# todo 2. 定义函数, 演示 使用one-hot编码
+#  2. 定义函数, 演示 使用one-hot编码
 def use_one_hot():
     # 1. 加载训练好的 词汇映射器
     my_tokenizer = joblib.load('./model/onehot_tokenizer.pkl')
@@ -89,7 +89,7 @@ def use_one_hot():
     print(f'{token}的one-hot编码为: {zero_list}')
 
 
-# todo 3(扩展). one-hot编码的简单版 实现方式.
+#  3(扩展). one-hot编码的简单版 实现方式.
 def simple_one_hot():
     # 1. 准备语料库.
     vocabs = {'周杰伦', '陈奕迅', '王力宏', '夯哥', '李巍巍', '查成龙'}
@@ -111,7 +111,7 @@ def simple_one_hot():
         print(f'{vocab}的one-hot编码为: {zero_list}')
 
 
-# todo 4. 测试代码
+#  4. 测试代码
 if __name__ == '__main__':
     # 1. 测试: one-hot编码
     # dm01_onehot_gen()
