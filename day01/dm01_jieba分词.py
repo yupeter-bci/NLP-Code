@@ -1,5 +1,3 @@
-from unittest import result
-
 import jieba
 
 def dm01():
